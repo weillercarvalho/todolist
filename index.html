@@ -6,23 +6,89 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>To do list</title>
         <style>
+
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
             body {
                 background: rgb(251,192,63);
                 background: radial-gradient(circle, rgba(251,192,63,1) 0%, rgba(252,70,107,1) 100%);
                 display: flex;
+                justify-content: center;
+                font-family: 'Roboto', sans-serif;
             }
 
             .board {
-                background-color: white;
+                background-color: rgba(255,255,255,0.8);
                 width: 320px;
-                height: 100px;
                 margin: 4px;
+                display: flex;
+                flex-direction: column;
+
             }
+
             h3 {
                 background-color: lightcoral;
                 margin: 0px;
                 text-align: center;
+                font-size: 24px;
+                color:white;
+                
+
             }
+
+            .add-card {
+                background-color: rgba(200,200,200,0.8);
+                margin: 4px 8px;
+                border-radius: 2px;
+
+            }
+
+            .add-card:hover {
+                cursor: pointer;
+            }
+
+            p {
+                font-size: 16px;
+                padding: 0 6px;
+                font-weight: 100;
+                ;
+            }
+
+            ul {
+                list-style-type: none;
+                min-height: 300px;
+                padding: 2px;
+                display: flex;
+                flex-wrap: wrap;
+                align-content: flex-start;
+                 
+            }
+
+            li {
+                background-color: white;
+                box-shadow: 2px 2px rgba(0,0,0,0.2);
+                border-radius: 4px;
+                min-width: 100px;
+                height: 40px;
+                display: flex;
+                justify-content: space-between;
+                margin: 4px 10px;
+                
+            }
+            
+            li:hover {
+                cursor: move;
+            }
+
+            .remove {
+                background-color: black;
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+            }
+
+
+
         </style>
     </head>
     <body>
@@ -30,17 +96,88 @@
             <h3>
                 A fazer:
             </h3>
+            <ul>
+                <li>
+                    <p>
+                        Dormir
+                    </p>
+                    <p class="remove">
+                        x
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Estudar
+                    </p>
+                    <p class="remove">
+                        x
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Correr
+                    </p>
+                    <p class="remove">
+                        x
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Malhar
+                    </p>
+                    <p class="remove">
+                        x
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Banhar
+                    </p>
+                    <p class="remove">
+                        x
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Assistir
+                    </p>
+                    <p class="remove">
+                        x
+                    </p>
+                </li>
+            </ul>
+            <div class="add-card">
+                <p>
+                    Adicionar Tarefa
+                </p>
+            </div>
         </div>
         <div class="board">
             <h3>
                 Fazendo:
             </h3>
+            <ul>
+                
+            </ul>
+            <div class="add-card">
+                <p>
+                    Adicionar Tarefa
+                </p>
+            </div>
         </div>
         <div class="board">
             <h3>
                 Entregue:
             </h3>
-        </div>
+            <ul>
 
+            </ul>
+            <div class="add-card">
+                <p>
+                    Adicionar Tarefa
+                </p>
+            </div>
+        </div>
+        
     </body>
-</html>
+    </html>
